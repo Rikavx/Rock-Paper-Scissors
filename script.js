@@ -14,3 +14,12 @@ function getComputerChoice() {
     return compChoice;
 }
 
+function getHumanChoice() {
+    let humanChoice = prompt("Rock, Paper, or Scissors?")
+
+    while (humanChoice !== "rock" && humanChoice !== "paper" && humanChoice !== "scissors") {
+        humanChoice = prompt("Try again")
+    }
+
+    return humanChoice;
+}
