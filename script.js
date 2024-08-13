@@ -71,10 +71,19 @@ function playGame() {
     let computerSelection = getComputerChoice();
 
     //run 5 times
-    for (let i = 0; i < 4; ++i) { 
+    for (let i = 0; i < 5; ++i) { 
         playRound(humanSelection, computerSelection);
-        humanSelection = getHumanChoice();
-        computerSelection = getComputerChoice();
+        if (i < 4) {
+            humanSelection = getHumanChoice();
+            computerSelection = getComputerChoice();
+        }
+    }
+
+    if (humanScore > computerScore) {
+        console.log("You win the game!");
+    }
+    else {
+        console.log("You lose :(");
     }
 }
 
