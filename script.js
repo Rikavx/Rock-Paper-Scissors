@@ -83,7 +83,7 @@ function playGame() {
         console.log("You win the game!");
     }
     else {
-        console.log("You lose :(");
+        console.log("You lose!");
     }
 }
 
