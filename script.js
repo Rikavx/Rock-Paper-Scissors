@@ -15,10 +15,13 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-    let humanChoice = prompt("Rock, Paper, or Scissors?")
+    let humanChoice = prompt("Rock, Paper, or Scissors?");
+
+    humanChoice = humanChoice.toLowerCase();
 
     while (humanChoice !== "rock" && humanChoice !== "paper" && humanChoice !== "scissors") {
         humanChoice = prompt("Try again")
+        humanChoice = humanChoice.toLowerCase();
     }
 
     return humanChoice;
